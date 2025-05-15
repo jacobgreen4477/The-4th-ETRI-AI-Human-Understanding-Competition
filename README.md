@@ -1,1 +1,0 @@
-# The-4th-ETRI-AI-Human-Understanding-Competition
