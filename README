@@ -7,7 +7,7 @@ a. 파생변수 생성
 1) ./input/train_63775_vF.parquet
 2) ./input/test_63775_vF.parquet
 
-b. cnn image 파생변수 생성
+b. resnet embedding 파생변수 생성
 - 파일명 :  121_etri_lifelog_dm_resnet_embedding_vF_20250720
 - 설명 : input dataset1 생성을 위한 코드 
 
