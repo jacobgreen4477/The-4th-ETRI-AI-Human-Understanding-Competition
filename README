@@ -1,1 +1,28 @@
-readme
+// 코드실행순서 
+
+a. 파생변수 생성
+- 파일명 :  100_etri_lifelog_preprocess_vF_20250720
+- 설명 : input dataset1 생성을 위한 코드 
+- output : 
+1) ./input/train_63775_vF.parquet
+2) ./input/test_63775_vF.parquet
+
+b. cnn image 파생변수 생성
+- 파일명 :  110_etri_lifelog_dm_cnn_image_vF_20250720
+- 설명 : input dataset1 생성을 위한 코드 
+- output : 
+1) ./input/train_63775_vF.parquet
+2) ./input/test_63775_vF.parquet
+
+c. LLM 결측값 추정
+- 파일명 :  111_etri_lifelog_dm_llm_impute_vF_20250720
+- 설명  : input dataset2 생성을 위한 코드 
+- output :  
+1) ./input/train_hjy_0603_v1.parquet, 
+2) ./input/test_hjy_0603_v1.parquet
+
+d. 모델학습 
+- 파일명 : 200_etri_lifelog_model_vF_20250720
+- 설명 : 모델 학습 및 최종 파일 생성 
+- output :  
+1) ./output/submission_top1_0.7218.csv 
