@@ -1,24 +1,24 @@
 // 코드실행순서 
 
-a. 파생변수 생성
+a. preprocess [1]
 - 파일명 :  110_etri_lifelog_dm_preprocess_vF_20250720
 - 설명 : input dataset1 생성을 위한 코드 
 - output : 
 1) ./input/train_63775_vF.parquet
 2) ./input/test_63775_vF.parquet
 
-b. resnet embedding 파생변수 생성
+b. preprocess [2] resnet embedded features 
 - 파일명 :  121_etri_lifelog_dm_resnet_embedding_vF_20250720
 - 설명 : input dataset1 생성을 위한 코드 
 
-c. LLM 결측값 추정
+c. preprocess [2] LLM-based imputation features
 - 파일명 :  122_etri_lifelog_dm_llm_impute_vF_20250722 -> 123_etri_lifelog_dm_preprocess_vF_20250720
 - 설명  : input dataset2 생성을 위한 코드 
 - output :  
 1) ./input/train_hjy_0603_v1.parquet, 
 2) ./input/test_hjy_0603_v1.parquet
 
-d. 모델학습 
+d. train model  
 - 파일명 : 200_etri_lifelog_ml_finalmodel_vF_20250720
 - 설명 : 모델 학습 및 최종 파일 생성 
 - output :  
